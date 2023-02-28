@@ -1,0 +1,44 @@
+.btn {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    font-weight: 700;
+    transition: .2s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.add_btn, .clear_btn {  
+    color: transparent;
+    background-image: linear-gradient(to right, #f8e56c, #e00c16);
+    background-clip: text;    
+}
+
+.add_btn {    
+    font-size: 1.25rem;
+}
+
+.edit_btn, .save_btn, .remove_btn {    
+    font-size: 1.125rem;    
+    margin: 0 0.5rem;
+}
+
+.edit_btn {
+    color: #39c6bb;
+}
+
+.save_btn {
+    color: #1bbb0a;
+}
+
+.remove_btn {
+    color: #e00c16;
+}
+
+.clear_btn {
+    font-size: 1.125rem;     
+}
+

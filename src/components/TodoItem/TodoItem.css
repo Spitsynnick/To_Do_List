@@ -1,0 +1,79 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0f1729;
+    padding: 1rem;
+    margin-bottom: 1rem; 
+    border-radius: 1rem;       
+}
+
+.item:last-child {
+    margin-bottom: 0;
+}
+
+.item_checkbox {
+    display: none;    
+}
+
+.checkbox_label {   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 1rem; 
+}
+
+.item_checkbox:checked + .checkbox_label .checkbox_span:after {     
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.checkbox_span {
+    position: relative;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;      
+    border: 0.15rem solid #1bbb0a;
+    border-radius: 0.375rem;      
+    cursor: pointer;
+    transition: .2s;
+}
+
+.checkbox_span:hover {
+    transform: scale(1.1);
+} 
+
+.checkbox_span:after {
+    content: "";
+    position: absolute;
+    display: block;    
+    top: 50%;
+    left: 50%;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #1bbb0a;
+    border-radius: 0.25rem;
+    transform: translate(-50%, -50%) scale(0);    
+    transition: .2s;
+}
+
+.item_text {
+    flex: 1 1 0%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #faf7f7;
+    font-size: 1.125rem;    
+    transition: .4s;
+}
+
+.item_text:not(:read-only) {
+    color: #39c6bb;
+}
+
+
+
+
+
+
+
+

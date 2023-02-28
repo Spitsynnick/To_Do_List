@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Fira Sans", Arial, Helvetica, sans-serif;      
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    background-color: #384252;
+    color: #faf7f7;   
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 1rem 1rem;
+    margin: 0 auto 1rem;
+}
+
+.header_title {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+.header_paragraph {
+    color: #acaeb3;
+    font-size: 1.15rem;
+    text-align: center;    
+}
+
+.todo_list {
+    flex: 1 1 0%;
+    width: 100%;    
+    padding: 1rem;
+    margin: 0 auto;
+    display: flex; 
+    justify-content: space-around;  
+}
+
+.todo_left, .todo_right {
+    width: 45%;
+}
+
+.add_container {
+    display: flex;
+    justify-content: center;
+}
+
+.todo_input {
+    flex: 1 1 0%;
+    border: none;
+    outline: none;
+    background-color: #1e2836;
+    color: #faf7f7;
+    font-size: 1.25rem;    
+    padding: 1rem;    
+    margin-right: 1rem;
+    border-radius: 1rem;    
+}
+
+.todo_input::placeholder {
+    color: #acaeb3;
+}
+
+.hint {
+    opacity: 0;
+    padding: 0.5rem 1rem;
+    color: #e00c16;
+    font-weight: 700;    
+}
+
+.todo_container {
+    padding: 1rem 0;
+    margin-bottom: 2rem;         
+}
+
+.todo_heading {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;    
+    margin-bottom: 1rem; 
+}
+
+.control_container {
+    display: flex;
+    justify-content: space-between;    
+    margin-bottom: 2.1875rem;  
+}
+
+.task_counter {
+    font-size: 1.15rem;
+    padding: 0.75rem;
+    border: 0.25rem solid #0f1729;
+    border-radius: 1rem;    
+}
+
+.log_container {
+    padding: 1rem 0;
+}
+
+.log_list {
+    min-height: 20rem;
+    background-color: #0f1729; 
+    color: #acaeb3;
+    padding: 1rem;
+    margin-bottom: 2rem;    
+    border-radius: 1rem;
+    overflow: auto;
+}
+
+.log_record {
+    list-style-type: none;     
+    font-size: 1.15rem;
+    font-style: italic;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+.log_record:last-child {
+    margin-bottom: 0;
+}
+
+.footer {  
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    letter-spacing: 0.1rem; 
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.footer_link {
+    text-decoration: none;
+    color: #faf7f7;    
+    cursor: pointer;    
+    transition: .2s;
+}
+
+.footer_link:hover {    
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 900px) {
+    :root {
+        font-size: 12px;
+    }
+
+    .todo_list {
+        flex-direction: column;  
+    }
+
+    .todo_left, .todo_right {
+        width: 100%;
+    }
+
+    .todo_container {       
+        margin-bottom: 1rem;         
+    }
+
+    .control_container {          
+         margin-bottom: 2rem;  
+    }
+}
+
+
+
+
+
