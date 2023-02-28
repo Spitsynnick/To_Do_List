@@ -9,6 +9,5 @@ Application for listing Your tasks on React and CSS.
 - If You want to clear all tasks and entries, click "CLEAR TODO LIST".
 
 Installation (create-react-app):
-
 1. npm install
 2. npm start
